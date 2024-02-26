@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Рейтинг проверенных компаний</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <form action="" method="post">
+          <label for="surname">Фамилия:</label>
+          <input id="surname" type="text" placeholder="Ваша Фамилия" />
+          <label for="name">Имя:</label>
+          <input id="name" type="text" placeholder="Ваше имя" />
+          <label for="phone">Номер телефона:</label>
+          <input
+            id="phone"
+            value=""
+            type="tel"
+            placeholder="Ваш номер телефона"
+          />
+        </form>
+        <button class="close">Оставить заявку</button>
+      </div>
+    </div>
+    <div class="container">
+      <header class="header">
+        <div class="header__logo">
+          <img src="./img/Логотип.svg" alt="logo" />
+        </div>
+        <div class="header__vectors">
+          <img src="./img/menus_1.svg" alt="menu" />
+          <p>все направления</p>
+        </div>
+        <div class="header__navbar">
+          <ul>
+            <li>О сервисе</li>
+            <li>FAQ</li>
+            <li>Поддержка</li>
+            <li>Сотрудничество</li>
+            <li>Контакты</li>
+          </ul>
+        </div>
+        <div class="header__search">
+          <input type="text" placeholder="поиск по сайту ..." />
+          <img src="./img/Поиск.svg" alt="search" />
+        </div>
+      </header>
+
+      <section class="promo">
+        <h1 class="promo__title">
+          Мы занимаемся <br />
+          рейтингом проверенных <br />
+          компаний
+        </h1>
+        <p class="promo__description">
+          Инструмент для выбора проверенных компаний в интернете, <br />
+          в разных направлениях бизнеса.
+        </p>
+        <button id="openModalButton" class="promo__btn">
+          выбрать направление
+        </button>
+      </section>
+      <section class="features">
+        <div class="feature">
+          <div class="feature__img">
+            <img src="./img/Layer_1.svg" alt="layer" />
+          </div>
+          <div class="feature__description">
+            <h2>
+              5 лет непрерывной <br />
+              работы
+            </h2>
+            <p>
+              рейтинги публикуются ежегодно, <br />
+              начиная с 2017 года
+            </p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature__img">
+            <img src="./img/Layer_2.svg" alt="layer" />
+          </div>
+          <div class="feature__description">
+            <h2>№1 по популярности <br />в сегменте</h2>
+            <p>
+              Самая высокая посещаемость среди <br />
+              аналогичных площадок.
+            </p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature__img">
+            <img src="./img/clipboard_1.svg" alt="" />
+          </div>
+          <div class="feature__description">
+            <h2>
+              25 основных рейтинга<br />
+              и 1 242 локальных
+            </h2>
+            <p>
+              Детальные срезы по тематикам,<br />
+              типам проектов, бизнесу <br />
+              клиентов и географии.
+            </p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature__img">
+            <img src="./img/Group.svg" alt="" />
+          </div>
+          <div class="feature__description">
+            <h2>
+              Понятная и прозрачная<br />
+              методология
+            </h2>
+            <p>
+              Все рейтинги строятся на<br />
+              реальных данных, которые вносят<br />
+              сами компании.
+            </p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature__img">
+            <img src="./img/homepage_1.svg" alt="" />
+          </div>
+          <div class="feature__description">
+            <h2>Независимость и <br />не аффилированность</h2>
+            <p>
+              Рейтинговый проект<br />
+              полностью независимый в интернете
+            </p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature__img">
+            <img src="./img/pin_1.svg" alt="" />
+          </div>
+          <div class="feature__description">
+            <h2>
+              Самый большой<br />
+              региональный охват
+            </h2>
+            <p>Участвуют компании <br />из 101 города 5 стран.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="popular-vectors">
+        <div class="popular__vectors">
+          <h1>Популярные направления</h1>
+          <hr />
+          <div class="vectors">
+            <div class="vector">
+              <div class="vectors__description">
+                <img src="./img/shopping-bag_2.svg" alt="bag" />
+                <h3>Торговля</h3>
+              </div>
+              <ul>
+                <li>Агрегаторы</li>
+                <li>Бытовая техника</li>
+                <li>Двери</li>
+                <li>Дрогери</li>
+                <li>Зоотовары</li>
+                <li>Канцтовары</li>
+                <li>Керамическая плитка</li>
+                <li>Климатическая техника</li>
+              </ul>
+            </div>
+            <div class="vector">
+              <div class="vectors__description">
+                <img src="./img/checklist_2.svg" alt="list" />
+                <h3>Услуги</h3>
+              </div>
+              <ul>
+                <li>Грузоперевозки и логистика</li>
+                <li>Digital маркетинг</li>
+                <li>Маркетинг и реклама</li>
+                <li>Недвижимость</li>
+                <li>Печать и самопроизводство</li>
+                <li>Ремонт бытовой техники</li>
+                <li>Ремонт автомобилей</li>
+                <li>Юриспруденция</li>
+              </ul>
+            </div>
+            <div class="vector">
+              <div class="vectors__description">
+                <img src="./img/stethoscope_1.svg" alt="stethoscope" />
+                <h3>Здоровье</h3>
+              </div>
+              <ul>
+                <li>Фармацевтика</li>
+                <li>Диетическое питание и фитнес</li>
+                <li>Женское здоровье</li>
+                <li>Мужское здоровье</li>
+                <li>Стоматологические услуги</li>
+                <li>Здоровье детей</li>
+              </ul>
+            </div>
+            <div class="vector">
+              <div class="vectors__description">
+                <img src="./img/location_1.svg" alt="location" />
+                <h3>Путешествие и туризм</h3>
+              </div>
+              <ul>
+                <li>Авиаперевозки</li>
+                <li>Гостинный бизнес</li>
+                <li>Наземный транспорт</li>
+                <li>Прокат автомобилей</li>
+                <li>Транспорт и экскурсии</li>
+                <li>Туристические компании</li>
+              </ul>
+            </div>
+            <div class="vector">
+              <div class="vectors__description">
+                <img src="./img/picture_1.svg" alt="picture" />
+                <h3>Искусство</h3>
+              </div>
+              <ul>
+                <li>Анимация и комиксы</li>
+                <li>Визуальное искусство и дизайн</li>
+                <li>Исполнительное искусство</li>
+                <li>Книги и литература</li>
+                <li>Музыка</li>
+                <li>Искусство и развлечения</li>
+                <li>Юмор</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-task">
+        <div class="main-task__box">
+          <h2 class="main-task__title">Главная задача Rangi.ru</h2>
+          <p class="main-task__description">
+            помочь Вам найти самое выгодное, удобное и качественное предложение.
+            Не верите? Просто попробуйте наш сервис и не забудьте оставить отзыв
+            о компании!
+          </p>
+        </div>
+      </section>
+
+      <section class="rating">
+        <div class="rating__background">
+          <img src="./img/Rectangle_4516.svg" alt="" />
+        </div>
+        <div class="rating__image"><img src="./img/Фото_1.svg" alt="" /></div>
+        <div class="rating__">
+          <h2 class="rating__title">Рейтинг надежных исполнителей</h2>
+          <p class="rating__title__description">
+            Rangi.ru – каталог сервисных центров, объединяющий десятки тысяч
+            компаний во всех городах России. На нашем сайте Вы сможете найти
+            ближайший к дому или офису сервисный центр, узнать время его работы
+            и контакты, просмотреть отзывы и комментарии, а также
+            сориентироваться по стоимости услуг. <br /><br />
+            Наши каталоги обновляются ежедневно, а все отзывы проходят строгую
+            модерацию, чтобы предотвратить «накрутки» рейтинга и
+            недобросовестную конкуренцию.
+            <br /><br />
+            Каталог Rangi.ru разработан специально для жителей городов, в
+            которых так сложно найти порядочный сервисный центр, работающий с
+            нужным типом и брендом оборудования. С нашей помощью Вы сохраните не
+            только деньги, но и драгоценное время – выберите вид техники,
+            нуждающейся в осмотре, тип ремонта, укажите свое местоположение, а
+            наш сайт покажет лучшие сервисные центры вблизи Вас.
+          </p>
+        </div>
+      </section>
+
+      <section class="our-rating">
+        <div class="our-rating__question">
+          <h2 class="our-rating__title">Как устроен наш рейтинг</h2>
+          <p class="our-rating__description">
+            Сервис отзывов и рекомендаций, который помогает людям искать,
+            находить и выбирать лучшие компании.
+          </p>
+        </div>
+        <div class="our-rating__boxes">
+          <div class="box">
+            <div class="box__num">
+              <img src="./img/Group_37982.svg" alt="num" />
+              <h5 class="box__title">Объективность</h5>
+            </div>
+            <div class="box__description">
+              <p>
+                Наш рейтинг основан на объективных критериях, таких как
+                финансовая стабильность, репутация, инновационность и др. Мы не
+                принимаем во внимание личные предпочтения или предвзятость.
+              </p>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="box__num">
+              <img src="./img/Group-02.svg" alt="num" />
+              <h5 class="box__title">Надежность</h5>
+            </div>
+            <div class="box__description">
+              <p>
+                Мы используем надежные и проверенные источники информации для
+                составления рейтинга. Это позволяет пользователям быть
+                уверенными в достоверности предоставленных данных.
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box__num">
+              <img src="./img/Group-03.svg" alt="num" />
+              <h5 class="box__title">Удобство</h5>
+            </div>
+            <div class="box__description">
+              <p>
+                Наш рейтинг представлен в удобном и понятном формате, который
+                позволяет легко сравнить компании по различным параметрам. Это
+                помогает пользователям принимать информированные решения при
+                выборе компании.
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box__num">
+              <img src="./img/Group-04.svg" alt="num" />
+              <h5 class="box__title">Информативность</h5>
+            </div>
+            <div class="box__description">
+              <p>
+                В нашем рейтинге мы предоставляем подробную информацию о каждой
+                компании, включая историю, условия работы, отзывы клиентов и
+                т.д. Это помогает пользователям получить полное представление о
+                компании перед принятием решения.
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box__num">
+              <img src="./img/Group-05.svg" alt="num" />
+              <h5 class="box__title">Независимость</h5>
+            </div>
+            <div class="box__description">
+              <p>
+                Мы не связаны с какой-либо компанией или отраслью, поэтому наш
+                рейтинг является независимым и непредвзятым. Мы стремимся
+                предоставить объективную оценку каждой компании и помочь
+                пользователям сделать правильный выбор.
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box__num">
+              <img src="./img/Group-06.svg" alt="num" />
+              <h5 class="box__title">Обратная связь</h5>
+            </div>
+            <div class="box__description">
+              <p>
+                Мы принимаем во внимание мнение пользователей и учитываем их
+                отзывы при составлении рейтинга. Это позволяет нам постоянно
+                улучшать качество предоставляемой информации и удовлетворять
+                потребности наших пользователей.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="our-rating__application">
+          <h1>
+            В нашем рейтинги любые сайты — от малых предприятий до глобальных
+            корпораций
+          </h1>
+          <p>Хотите добавить свой сайт? Отправьте заявку.</p>
+          <button>Подробнее о сотрудничестве</button>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="footer__info">
+        <div class="footer__info__logo">
+          <img src="./img/logo__footer.svg" alt="logo" />
+          <p>
+            Сайт носит исключительно информационный характер и ни при каких
+            условиях не является публичной офертой, определяемой положениями ч.
+            2 ст. 437 Гражданского кодекса РФ. Чтобы получить подробную
+            информацию о стоимости услуг, обращайтесь, пожалуйста, к
+            администраторам клиник. «Бест Клиник» - частная клиника и платная
+            поликлиника в Москве, больница стационар.
+          </p>
+        </div>
+        <div class="footer__info__menu">
+          <div class="menu__title">
+            <h5>Сервисе</h5>
+            <h5 id="mr-55">Направления</h5>
+          </div>
+          <hr />
+          <div class="menu__list">
+            <ul>
+              <li>О сервисе</li>
+              <li>Вопросы и ответы</li>
+              <li>Контакты</li>
+              <li>Партнеы</li>
+            </ul>
+            <ul id="vec">
+              <li>Азартные игры</li>
+              <li>Потребительские услуги</li>
+              <li>Виды спорта</li>
+              <li>Государство и право</li>
+              <li>Дом и сад</li>
+              <li>Еда и напитки</li>
+              <li>Здоровье</li>
+              <li>Игры</li>
+              <li>Искусство и развлечения</li>
+              <li>Компьютеры, электроника</li>
+              <li>Наука и образование</li>
+              <li>Новости и блоги</li>
+              <li>Образ жизни</li>
+              <li>Питомцы и животные</li>
+              <li>Путешествия и туризм</li>
+              <li>Работа и карьера</li>
+              <li>Сообщество и общество</li>
+              <li>Справочные мателиалы</li>
+              <li>Транспортные средства</li>
+              <li>Тяжелая промышленность</li>
+              <li>Финансы</li>
+              <li>Хобби и досуг</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__info__support">
+          <h5 id="support">Поддержка</h5>
+          <div class="message">
+            <p>info@rangi.ru</p>
+            <button>Отправить запрос</button>
+          </div>
+          <div class="medias">
+            <h5>Соцсети м мессенджеры</h5>
+            <div class="icons">
+              <img src="./img/whatsapp-icon.svg" alt="whats app" />
+              <img src="./img/vk-icon.svg" alt="vk" />
+              <img src="./img/tg-icon.svg" alt="telegramm" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__bottom__content">
+          <p>© 2009–2023 Рейтинг сайтов «Rangi». Политика конфиденциальности</p>
+          <div class="footer__bottom__content__logo">
+            <p>Сайт построили в</p>
+            <img src="./img/Лого.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./index.js"></script>
+</html>
